@@ -64,3 +64,32 @@ reg1 <-glm(lider_fuerte ~ Q174 + Q173 + Q191 + Q156_1 + Q172 + Q156_1*echo, fami
 
 summary(reg1)
 predict(reg1)
+
+############################ Varianzas de variables de interés#######################
+
+table(mepop_raw$Q156_1) #Identificación política
+table(mepop_raw$Q173) #Educación
+table(mepop_raw$Q195) #Genero
+table(mepop_raw$Q183) #Religión
+table(mepop_raw$Q171_2) #Aborto
+table(mepop_raw$Q174) #Ingreso
+
+#Estas 4 pueden ser una "escala de pesimismo"
+
+table(mepop_raw$Q164) #SITUACIÓN ECONÓMICA ACTUAL DEL PAÍS
+table(mepop_raw$Q165) #SITUACIÓN ECONÓMICA DEL PAÍS EN 12 MESES
+table(mepop_raw$Q166) #TU SITUACIÓN ACTUAL
+table(mepop_raw$Q167) #TU SITUACIÓN EN 12 MESES
+
+#Conspiración
+
+table(mepop_raw$Q192_4) #Sociedades secretas en el mundo
+table(mepop_raw$Q192_5) #Sociedades secretas en política
+
+#Lider fuerte
+
+table(mepop_raw$Q161_1)
+
+#Partidos políticos
+
+table(mepop_raw$Q157)
