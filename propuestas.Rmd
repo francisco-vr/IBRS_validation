@@ -1,0 +1,59 @@
+---
+title: "Propuestas de paper"
+output: pdf_document
+date: "2024-08-29"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Lista de variables que nos interesaron:
+
+1. Strong leaders
+2. Political engagement
+3. Need for security and certainty
+4. Sociocultural views
+5. Political identification
+6. Trust in institutions
+7. Fake news
+8. system justification
+9. Preferences for democracy
+10. echo chamber
+11. Conpsiracy
+12. Género
+13. edad
+14. Educacion
+15. Ingreso familiar
+
+## Dudas:
+
+1. ¿Esta encuesta tiene alcanza nacional? ¿Cómo fue la estrategia?
+2. ¿La escala de conspiración está validada? Sino, podríamos hacerlo y hacer un paper de eso
+
+
+## Propuesta N°1 - Validación de escala de echo chambers
+
+
+- Es fácil
+- Francisco conoce la literatura
+- Ya hay una escala de validación de escala, pero limitada (sólo estudiantes y pequeña)
+- Podemos acer una extensión para que tenga sentido
+
+**Ejemplo:**
+
+* Necesidad de certidumbre y seguridad comparada en izquierdas y derechas, respecto de si alineación proestad/anti-estado y en su visión cultural. ¿Las cámaras de eco tienen un factor potenciador en ellos? 
+
+
+## Propuesta N°2: Validación de escala de Conspiracy
+
+- Una opción es validar esta escala y además hacer algo con ello.
+- Certidumbre - conspiracy - trust
+- 
+
+**Opciones de uso:**
+
+
+## Propuesta N°3: Strong leaders
+
+- 
