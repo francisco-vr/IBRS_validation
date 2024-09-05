@@ -20,7 +20,7 @@ multiplicador <-desviacion*3
 
 mepop_short <-mepop_raw%>%
   dplyr::filter( Progress == 100 & Q4 == 1 & Duration__in_seconds_ < multiplicador)%>%
-  dplyr::select(Q172, Q191, Q11_1:Q11_9,Q141_1:Q141_10, Q142_1:Q142_9, Q147_1, Q156_1, Q161_1:Q161_3, Q144_1:Q144_9, Q196, Q173, Q174, NSE)%>%
+  dplyr::select(Q172, Q191, Q11_1:Q11_9,Q15_1:Q15_7,Q141_1:Q141_10, Q142_1:Q142_9, Q147_1, Q156_1, Q161_1:Q161_3, Q168_1, Q168_3,Q170_8, Q144_1:Q144_9, Q192_1:Q192_5,Q196, Q173, Q174, NSE)%>%
   na.omit(TRUE)
                 
 
