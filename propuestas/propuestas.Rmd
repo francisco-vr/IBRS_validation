@@ -38,53 +38,27 @@ style_duo_accent(
 )
 ```
 
-## Typography
+## 1° Validación de escala de echo chambers
 
-Text can be **bold**, _italic_, ~~strikethrough~~, or `inline code`.
+### ventajas:
 
-[Link to another slide](#colors).
+1. Fácil y rápida
+2. francisco Conoce del tema en términos teóricos
 
-### Lorem Ipsum
 
-Dolor imperdiet nostra sapien scelerisque praesent curae metus facilisis dignissim tortor. 
-Lacinia neque mollis nascetur neque urna velit bibendum. 
-Himenaeos suspendisse leo varius mus risus sagittis aliquet venenatis duis nec.
+### Desventajas
 
-- Dolor cubilia nostra nunc sodales
-
-- Consectetur aliquet mauris blandit
-
-- Ipsum dis nec porttitor urna sed
+1. Da para un paper sólo eso, considerando que ya se hizo uno?
+2. Esto e smuestra nacional y representativa
+3. Habría que agregarle un caso de aplicación
 
 ---
-name: colors
+## lista de variables que nos interesa explorar para refinar:
 
-## Colors
+1. Strong leaders
+2. 
 
-.left-column[
-Text color
 
-[Link Color](#3)
-
-**Bold Color**
-
-_Italic Color_
-
-`Inline Code`
-]
-
-.right-column[
-Lorem ipsum dolor sit amet, [consectetur adipiscing elit (link)](#3), 
-sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Erat nam at lectus urna.
-Pellentesque elit ullamcorper **dignissim cras tincidunt (bold)** lobortis feugiat. 
-_Eros donec ac odio tempor_ orci dapibus ultrices. 
-Id porta nibh venenatis cras sed felis eget velit aliquet.
-Aliquam id diam maecenas ultricies mi.
-Enim sit amet 
-`code_color("inline")`
-venenatis urna cursus eget nunc scelerisque viverra.
-]
 
 ---
 

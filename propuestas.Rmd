@@ -56,4 +56,24 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Propuesta N°3: Strong leaders
 
-- 
+\newpage
+
+# Reunión 5 de septiembre 2024
+
+Exploramos la ya conocida [Conspiracy mentality questionnaire](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2013.00225/full), escala que tiene hartas citas y no está validada en español. Además, se refiere a mentalidad lo que puede llevarnos a aplicarla como un _worldview_.
+
+Encontramos que el $\alpha = .81$ y que tiene dos factores: ítemes 1 y 2, y 3, 4 y 5. Es importante considerar que el íte 5, si se establecen 3 factores, da como un tercer factor en sí mismo. 
+
+Al hacer el AFE y AFC, vemos que la mejor bondad de ajuste es de dos factores (CLI =.99; TLI = .99; RMSEA =. 07), y que teóricamente tiene sentido, estableciendo dos nombres provisionales: Conspiración en información y _poder oculto_. 
+
+Probamos provisoriamente para el análisis de convergencia cierta spregunta ssobre credibilidad de medios, creencia en los políticos y sobre el poder de decisión, pero las correlaciones son pobres (<.40)
+
+
+### ¿Qué hay que hacer?
+
+1. Boostrap, pues aplicamos la misma BBDD al AFE Y AFC
+2. Validez por grupos conocidos (personas de derecha y/o conservadoras)
+3. Buscar en la bibliografía:
+  3.1 Cuál es la carga factorial que les da a quienes han replicado la escala, pues en el paper original no aparece
+  3.2 Qué escalas o preguntas han utilizado para el análisis convergente o divergente
+4. Observar bien el método de filtrado de observaciones de toda la BBDD, pues tengo mis resqueremos dado el tiempo de duración de contestado
