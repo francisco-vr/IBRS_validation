@@ -1,3 +1,5 @@
+#ESTA ESCALA NO DA CONVERGENCIA CON OTRAS ESCALAS
+
 source("strong_leaders/scripts/0_packages.R")
 
 df <- readRDS("strong_leaders/Data/intermediate_data/mepop_short.RDS")
@@ -6,7 +8,6 @@ conspiracy <- dplyr::select(df, Q192_1:Q192_5) #Conspiracy Mentality Questionnai
 
 #####Distribución de las respuestas
 
-library(ggplot2)
 library(reshape2)
 
 # Prepare your data
@@ -105,12 +106,12 @@ conspiracy_2 <- conspiracy$Q192_3+conspiracy$Q192_4+conspiracy$Q192_5
 
 #Análisis Convergente
 
-convergencia <- cbind(conspiracy_1,dplyr::select(df,Q15_1:Q15_7))
+convergencia <- cbind(conspiracy,dplyr::select(df,Q15_1:Q15_7))
 
 cor(convergencia)
 
 convergencia[1:5,6:12]
 
-convergencia<- cbind(conspiracy_1,dplyr::select(df,Q168_1, Q168_3,Q170_8))
+convergencia<- cbind(conspiracy,dplyr::select(df,Q168_1, Q168_3,Q170_8))
 
-cor(convergencia)[,1:2]
+cor(convergencia)
