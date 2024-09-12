@@ -15,16 +15,26 @@ mepop_raw$Q4 <-as.numeric(mepop_raw$Q4)
 
 
 desviacion <-sd(mepop_raw$Duration__in_seconds_)
-multiplicador <-desviacion*3
+multiplicador <-desviacion*1
 
 
 mepop_short <-mepop_raw%>%
   dplyr::filter( Progress == 100 & Q4 == 1 & Duration__in_seconds_ < multiplicador)%>%
-  dplyr::select(Q172, Q191, Q11_1:Q11_9,Q15_1:Q15_7,Q141_1:Q141_10, Q142_1:Q142_9, Q147_1, Q156_1, Q161_1:Q161_3, Q168_1, Q168_3,Q170_8, Q144_1:Q144_9, Q192_1:Q192_5,Q196, Q173, Q174, NSE)%>%
+  dplyr::select(Duration__in_seconds_,Q172, Q191, Q11_1:Q11_9,Q15_1:Q15_7,Q141_1:Q141_10, Q142_1:Q142_9, Q147_1, Q156_1, Q161_1:Q161_3, Q168_1, Q168_3,Q170_8, Q144_1:Q144_9, Q192_1:Q192_5,Q196, Q173, Q174, NSE)%>%
   na.omit(TRUE)
                 
 
-#Primera disacusión: cómo vamos a limpiar la base de datos en términos de cuánto se demoraron en responder
+#Primera disacusión: cómo vamos a limpiar la base de datos en términos de cuánto se demoraron en responder?
+
+mean(mepop_short$Duration__in_seconds_)
+sd(mepop_short$Duration__in_seconds_)
+range(mepop_short$Duration__in_seconds_)
+
+
+# mepop raw: mean=5260,22 (87,6 min); sd=23363,94 (389min); range: 3 - 493162 (3 segundos a ... 8219 segundos! 136,98 horas, 5,7 días)
+# mepop_short con 3 desviaciones estandar: mean=2856,71; sd=4889,16, range= 260 - 68619
+# mepop short con 2 desviaciones estandar: mean=2685.425; sd=3781.382 ; range= 260 44583
+# mepop short con 1 desviación estandar: mean= 2377.78; sd= 2154.222 ; range= 260 21593  
 
 
 #create binary response to strong leader ("good" or "bad")
