@@ -15,7 +15,7 @@ mepop_raw$Q4 <-as.numeric(mepop_raw$Q4)
 
 
 desviacion <-sd(mepop_raw$Duration__in_seconds_)
-multiplicador <-desviacion*1
+multiplicador <-desviacion*2
 
 
 mepop_short <-mepop_raw%>%
@@ -103,3 +103,4 @@ table(mepop_raw$Q161_1)
 #Partidos políticos
 
 table(mepop_raw$Q157)
+
